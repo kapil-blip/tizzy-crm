@@ -1,0 +1,185 @@
+import { StyleSheet, Dimensions } from 'react-native';
+import { COLORS } from '../../../assets/themes/colors';
+
+const { height } = Dimensions.get('window');
+
+export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: COLORS.WHITE,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.WHITE,
+    paddingHorizontal: 20,
+  },
+  header: {
+    alignItems: 'center',
+    marginTop: height * 0.08,
+    marginBottom: height * 0.04,
+  },
+  title: {
+    fontFamily: 'BalooBhai2-Medium',
+    fontWeight: '500',
+    fontSize: 24,
+    lineHeight: 24, // 100% of 24px
+    letterSpacing: 0,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontFamily: 'BalooBhai2-Regular',
+    fontSize: 14,
+    lineHeight: 14,
+    letterSpacing: 0,
+    textAlign: 'center',
+    marginTop: 8,
+    color: '#666666',
+  },
+  form: {
+    marginTop: 8,
+  },
+  label: {
+    fontFamily: 'BalooBhai2-Medium',
+    fontSize: 14,
+    lineHeight: 14,
+    letterSpacing: 0,
+    color: COLORS.GREY_800,
+    marginBottom: 8,
+  },
+  requiredAsterisk: {
+    color: COLORS.ERROR,
+  },
+  inputField: {
+    width: '100%',
+    height: 48,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: COLORS.GREY_150,
+    paddingHorizontal: 14,
+    paddingVertical: 0,
+    marginBottom: 32,
+    fontFamily: 'BalooBhai2-Regular',
+    fontWeight: '400',
+    fontSize: 14,
+    textAlignVertical: 'center',
+    color: COLORS.GREY_800,
+    backgroundColor: COLORS.WHITE,
+  },
+  inputFocused: {
+    borderColor: COLORS.GREY_400,
+  },
+  inputError: {
+    borderColor: COLORS.ERROR,
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    width: '100%',
+    height: 48,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: COLORS.GREY_150,
+    paddingHorizontal: 14,
+    marginBottom: 32,
+    backgroundColor: COLORS.WHITE,
+  },
+  passwordContainerFocused: {
+    borderColor: COLORS.GREY_400,
+  },
+  passwordContainerError: {
+    borderColor: COLORS.ERROR,
+  },
+  passwordInput: {
+    flex: 1,
+    height: 48,
+    fontFamily: 'BalooBhai2-Regular',
+    fontWeight: '400',
+    fontSize: 14,
+    color: COLORS.GREY_800,
+    paddingVertical: 0,
+  },
+  eyeButton: {
+    padding: 4,
+  },
+  errorText: {
+    color: COLORS.ERROR,
+    fontSize: 12,
+    fontFamily: 'BalooBhai2-Regular',
+    marginBottom: 8,
+    marginTop: -4,
+  },
+  optionsRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: 4,
+    // marginBottom: 20,
+  },
+  rememberMeButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  checkbox: {
+    width: 20,
+    height: 20,
+    borderRadius: 4,
+    borderWidth: 1.5,
+    borderColor: COLORS.GREY_400,
+    backgroundColor: COLORS.WHITE,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 8,
+  },
+  checkboxChecked: {
+    backgroundColor: COLORS.PRIMARY,
+    borderColor: COLORS.PRIMARY,
+  },
+  rememberText: {
+    color: COLORS.GREY_800,
+    fontSize: 14,
+    fontFamily: 'BalooBhai2-Regular',
+    lineHeight: 20,
+  },
+  forgotText: {
+    color: COLORS.PRIMARY,
+    fontSize: 14,
+    fontFamily: 'BalooBhai2-Medium',
+    textDecorationLine: 'underline',
+    fontWeight: '500',
+    lineHeight: 20,
+  },
+  loginButton: {
+    backgroundColor: COLORS.PRIMARY,
+    height: 52,
+    borderRadius: 28,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 32,
+  },
+  loginButtonDisabled: {
+    opacity: 0.6,
+  },
+  loginText: {
+    color: COLORS.WHITE,
+    fontFamily: 'BalooBhai2-Medium',
+    fontSize: 18,
+    lineHeight: 24,
+    letterSpacing: 0,
+    textAlign: 'center',
+  },
+  footer: {
+    position: 'absolute',
+    bottom: 32,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+  },
+  copyrightText: {
+    color: COLORS.GREY_400,
+    fontSize: 13,
+    fontFamily: 'BalooBhai2-Regular',
+    fontWeight: '400',
+    lineHeight: 20,
+    textAlign: 'center',
+  },
+});

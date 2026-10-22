@@ -1,0 +1,92 @@
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../themes/colors';
+
+export default StyleSheet.create({
+  previewContainer: {
+    flex: 1,
+    minHeight: 0,
+    width: '100%',
+    position: 'relative',
+    borderRadius: 12,
+    overflow: 'hidden',
+    backgroundColor: '#FFFFFF',
+    borderWidth: 1,
+    borderColor: '#E2E8F0',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inlineDownloadBtn: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+    zIndex: 5,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 2,
+    shadowColor: '#000000',
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  viewerWrap: {
+    flex: 1,
+    minHeight: 0,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    overflow: 'hidden',
+  },
+  loadingWrap: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  loadingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.85)',
+    zIndex: 2,
+  },
+  modalRoot: {
+    flex: 1,
+    backgroundColor: COLORS.WHITE,
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#E2E8F0',
+  },
+  modalTitle: {
+    fontFamily: 'BalooBhai2-SemiBold',
+    fontSize: 18,
+    color: '#1E1E1E',
+  },
+  modalCloseBtn: {
+    padding: 8,
+  },
+  modalHeaderActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  modalDownloadBtn: {
+    padding: 8,
+    marginRight: 8,
+  },
+  modalBody: {
+    flex: 1,
+    minHeight: 0,
+    overflow: 'hidden',
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
